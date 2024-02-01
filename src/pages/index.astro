@@ -2,11 +2,13 @@
 import Hero from '../components/Hero.astro';
 import { Header } from '../components/sections/Header';
 import { Footer } from '../components/sections/Footer';
+import { Projects } from '../components/sections/Projects';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title='Welcome to Astro.'>
 	<Header client:only />
 	<Hero />
+	<Projects />
 	<Footer client:only />
 </Layout>
