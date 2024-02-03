@@ -1,15 +1,17 @@
 ---
 import { Header } from '../components/sections/Header';
 import { Footer } from '../components/sections/Footer';
-import { RecentProjectCard } from '../components/sections/RecentProjectCard';
-import { Projects } from '../components/sections/Projects';
+
 import Layout from '../layouts/Layout.astro';
-import { Hero } from '../components/sections/Hero';
+import { Bio } from '../components/sections/Bio';
+import { Experience } from '../components/sections/Experience';
+import { Education } from '../components/sections/Education';
 ---
 
 <Layout title='Welcome to Astro.'>
 	<Header client:only />
-	<Hero />
-	<RecentProjectCard />
+	<Bio />
+	<Experience />
+	<Education />
 	<Footer client:only />
 </Layout>

@@ -1,9 +1,15 @@
 import { Github, Linkedin, Twitter } from 'lucide-preact';
 import { Link } from './Link';
+import { cn } from '../lib/cn';
+import type { FunctionComponent } from 'preact';
 
-export const SocialLinks = () => {
+export interface SocialLinksProps {
+	className?: string;
+}
+
+export const SocialLinks: FunctionComponent<SocialLinksProps> = ({ className }) => {
 	return (
-		<ul class='flex py-10 gap-3 justify-center'>
+		<ul className={cn('flex gap-3', className)}>
 			<li>
 				<Link variant={'ghost'} size={'icon'}>
 					<Twitter />
