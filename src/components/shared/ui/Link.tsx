@@ -7,6 +7,7 @@ import { buttonVariants } from './Button';
 export interface LinksProps extends VariantProps<typeof buttonVariants> {
 	className?: string;
 	children: ComponentChildren;
+	href?: string;
 }
 
 const Link = forwardRef<HTMLAnchorElement, LinksProps>(({ className, variant, size, children, ...props }, ref) => {

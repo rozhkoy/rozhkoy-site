@@ -5,7 +5,7 @@ import { Container } from '../shared/ui/container';
 export const Bio = () => {
 	return (
 		<section>
-			<Container className='pb-20 pt-40 '>
+			<Container className='pb-20 pt-12 '>
 				<h1 className='text-3xl font-semibold w-full'>About me</h1>
 
 				<h2 className='text-xl font-semibold  mt-16'>A few words to myself</h2>

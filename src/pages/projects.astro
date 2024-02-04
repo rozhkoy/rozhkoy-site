@@ -3,17 +3,18 @@ import { Header } from '../components/sections/Header';
 import { Footer } from '../components/sections/Footer';
 
 import Layout from '../layouts/Layout.astro';
-import { Bio } from '../components/sections/Bio';
-import { Experience } from '../components/sections/Experience';
-import { Education } from '../components/sections/Education';
+import { RecentProjectCard } from '../components/sections/RecentProjectCard';
+import { ProjectsHero } from '../components/shared/ui/ProjectsHero';
+import { SelectedProjects } from '../components/sections/SelectedProjects';
 import { Breadcrumb } from '../components/sections/Breadcrumb';
 ---
 
 <Layout title='Welcome to Astro.'>
 	<Header client:only />
 	<Breadcrumb client:only />
-	<Bio />
-	<Experience />
-	<Education />
+	<ProjectsHero />
+	<RecentProjectCard />
+	<SelectedProjects />
 	<Footer client:only />
 </Layout>
+../components/shared/ui/ProjectsHero
