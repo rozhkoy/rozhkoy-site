@@ -1,18 +1,17 @@
+import type { FunctionComponent } from 'preact';
+import { routes } from '../consts/routes';
 import { NavLink } from './NavLink';
+import type { PropsWithClassName } from '../type/PropsWithClassName';
 
-export const Navbar = () => {
+export const Navbar: FunctionComponent<PropsWithClassName> = ({ className }) => {
 	return (
 		<nav>
-			<ul class='flex gap-x-4'>
-				<li>
-					<NavLink title='Home' pathname='/' />
-				</li>
-				<li>
-					<NavLink title='About' pathname='/about' />
-				</li>
-				<li>
-					<NavLink title='Projects' pathname='/projects' />
-				</li>
+			<ul class={className}>
+				{Object.keys(routes).map((item) => (
+					<li>
+						<NavLink title={routes[item].title} pathname={routes[item].path} />
+					</li>
+				))}
 			</ul>
 		</nav>
 	);

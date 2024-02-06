@@ -1,5 +1,5 @@
 import type { FunctionComponent } from 'preact';
-import { Container } from './container';
+import { Container } from './Container';
 import { Github, Globe, Grid } from 'lucide-preact';
 import { Link } from './Link';
 import { Badge } from './Badge';

@@ -1,5 +1,5 @@
 import { ChevronRight, Home } from 'lucide-preact';
-import { Container } from '../shared/ui/container';
+import { Container } from '../shared/ui/Container';
 
 export const Breadcrumb = () => {
 	const path = window.location.pathname.split('/');

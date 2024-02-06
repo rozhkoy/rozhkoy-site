@@ -1,19 +1,18 @@
 ---
 import { Header } from '../components/sections/Header';
 import { Footer } from '../components/sections/Footer';
-
 import Layout from '../layouts/Layout.astro';
 import { Bio } from '../components/sections/Bio';
-import { Experience } from '../components/sections/Experience';
-import { Education } from '../components/sections/Education';
 import { Breadcrumb } from '../components/sections/Breadcrumb';
+import { aboutMe } from '../content/aboutMe';
+import { Chronology } from '../components/shared/ui/Chronology';
 ---
 
 <Layout title='Welcome to Astro.'>
 	<Header client:only />
 	<Breadcrumb client:only />
-	<Bio />
-	<Experience />
-	<Education />
+	<Bio bio={aboutMe.bio} />
+	<Chronology heading='Experience' items={aboutMe.experience} />
+	<Chronology heading='Education' items={aboutMe.education} />
 	<Footer client:only />
 </Layout>

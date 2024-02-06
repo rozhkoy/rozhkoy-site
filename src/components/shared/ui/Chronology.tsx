@@ -1,6 +1,6 @@
 import type { FunctionComponent, PropsWithChildren } from 'preact/compat';
 import type { PropsWithClassName } from '../type/PropsWithClassName';
-import { Container } from './container';
+import { Container } from './Container';
 import { DiscAlbum } from 'lucide-preact';
 import { ChronologyItem, type ChronologyItemProps } from './ChronologyItem';
 

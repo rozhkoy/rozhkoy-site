@@ -5,11 +5,15 @@ import { RecentProjectCard } from '../components/sections/RecentProjectCard';
 
 import Layout from '../layouts/Layout.astro';
 import { Hero } from '../components/sections/Hero';
+import banner from '../content/assets/tic-tac-toe-baner.png';
+import firstSlot from '../content/assets/tic-tac-toe-img-1.png';
+import secondSlot from '../content/assets/tic-tac-toe-img-2.png';
+import { recentProject } from '../content/recentProject';
 ---
 
 <Layout title='Welcome to Astro.'>
 	<Header client:only />
 	<Hero />
-	<RecentProjectCard />
+	<RecentProjectCard {...recentProject} banner={banner} firstSlot={firstSlot} secondSlot={secondSlot} />
 	<Footer client:only />
 </Layout>
