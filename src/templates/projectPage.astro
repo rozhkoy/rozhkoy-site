@@ -1,0 +1,34 @@
+---
+import { Breadcrumb } from '../components/sections/Breadcrumb';
+import { Footer } from '../components/sections/Footer';
+import { Header } from '../components/sections/Header';
+import { ImageGrid } from '../components/shared/ui/ImageGrid';
+import { ProjectInfo } from '../components/shared/ui/ProjectInfo';
+import { Container } from '../components/shared/ui/Container';
+import Layout from '../layouts/Layout.astro';
+
+const { frontmatter } = Astro.props;
+---
+
+<style>
+	article :global(ul) {
+		@apply list-disc ml-6 mt-4 gap-2;
+	}
+</style>
+
+<Layout title='Welcome to Astro.'>
+	<Header client:only />
+	<Breadcrumb client:only />
+	<Container className='py-9'>
+		<ImageGrid banner={frontmatter.banner} firstSlot={frontmatter.firstSlot} secondSlot={frontmatter.secondSlot} />
+	</Container>
+
+	<ProjectInfo year={frontmatter.year} title={frontmatter.title} github='blank' website='blank' />
+	<Container className='py-9'>
+		<article>
+			<slot />
+		</article>
+	</Container>
+
+	<Footer client:only />
+</Layout>

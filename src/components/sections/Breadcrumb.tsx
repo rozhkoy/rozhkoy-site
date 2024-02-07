@@ -23,9 +23,13 @@ export const Breadcrumb = () => {
 								</li>
 
 								<li>
-									<a href={`/${array.slice(0, index + 1).join('/')}`} class='block transition hover:text-black first-letter:uppercase'>
-										{item.split('_').join(' ')}
-									</a>
+									{array.length - 1 === index ? (
+										<span class='block transition first-letter:uppercase'>{item.split('_').join(' ')}</span>
+									) : (
+										<a href={`/${array.slice(0, index + 1).join('/')}`} class='block transition hover:text-black first-letter:uppercase'>
+											{item.split('_').join(' ')}
+										</a>
+									)}
 								</li>
 							</>
 						))}

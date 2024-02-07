@@ -1,29 +1,31 @@
-import { ChevronsRight } from 'lucide-preact';
+import { ExternalLink } from 'lucide-preact';
 import { Badge } from './Badge';
 import { Link } from './Link';
+import type { FunctionComponent } from 'preact';
 
-export const ProjectCard = () => {
+interface ProjectCardProps {
+	title: string;
+	slogan: string;
+	stack: string[];
+	href: string;
+	img: string;
+}
+
+export const ProjectCard: FunctionComponent<ProjectCardProps> = ({ title, slogan, stack, href, img }) => {
 	return (
-		<article>
-			<img className='rounded-md object-contain row-start-2 row-end-3  w-full object-center' src={'https://generated.vusercontent.net/placeholder.svg'} />
-			<div className=''>
-				<h3 className={'mt-8 scroll-m-20 text-2xl font-semibold tracking-tight'}>Best tic-tac-toe</h3>
-				<p className={'mb-6 text-zinc-500 dark:text-zinc-400'}>The "Best tic-tac-toe" project is an interactive web game that combines three exciting</p>
+		<article className='p-2 shadow-lg bg-white rounded-md'>
+			<img className='rounded-md object-contain row-start-2 row-end-3  object-center max-h-[225px] w-full shadow-lg' src={img} width='360' height='225' />
+			<div>
+				<h3 className={'mt-5 scroll-m-20 text-2xl font-semibold tracking-tight'}>{title}</h3>
+				{/* <p className={' text-zinc-500 dark:text-zinc-400'}>{slogan}</p>
 
 				<ul className={'flex flex-wrap gap-2 mt-3'}>
-					<Badge>React</Badge>
-					<Badge>TypeScript</Badge>
-					<Badge>React</Badge>
-					<Badge>Redux</Badge>
-					<Badge>React</Badge>
-					<Badge>Preact</Badge>
-					<Badge>React</Badge>
-					<Badge>Astro</Badge>
-					<Badge>React</Badge>
-					<Badge>Bootstrap</Badge>
-				</ul>
-				<Link className={'w-full mt-3'}>
-					Visit site <ChevronsRight />
+					{stack.map((item) => (
+						<Badge>{item}</Badge>
+					))}
+				</ul> */}
+				<Link href={href} target='blank' className={'w-full mt-3  gap-2'}>
+					Visit Website <ExternalLink size={16} />
 				</Link>
 			</div>
 		</article>

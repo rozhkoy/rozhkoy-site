@@ -4,6 +4,8 @@ import type { ComponentChildren, JSX } from 'preact';
 import { cn } from '../lib/cn';
 import { buttonVariants } from './Button';
 
+//Fix this interface
+
 export interface LinksProps extends VariantProps<typeof buttonVariants> {
 	className?: string;
 	children: ComponentChildren;

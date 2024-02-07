@@ -7,14 +7,14 @@ import { RecentProjectCard } from '../components/sections/RecentProjectCard';
 import { ProjectsHero } from '../components/shared/ui/ProjectsHero';
 import { SelectedProjects } from '../components/sections/SelectedProjects';
 import { Breadcrumb } from '../components/sections/Breadcrumb';
+import { recentProject } from '../content/recentProject';
 ---
 
 <Layout title='Welcome to Astro.'>
 	<Header client:only />
 	<Breadcrumb client:only />
 	<ProjectsHero />
-	<RecentProjectCard />
+	<RecentProjectCard {...recentProject} />
 	<SelectedProjects />
 	<Footer client:only />
 </Layout>
-../components/shared/ui/ProjectsHero
