@@ -13,16 +13,19 @@ export const SocialLinks: FunctionComponent<SocialLinksProps> = ({ className }) 
 		<ul className={cn('flex gap-3', className)}>
 			<li>
 				<Link target='blank' href={socialLinks.twitter} variant={'ghost'} size={'icon'}>
+					<span className='sr-only'>twitter</span>
 					<Twitter />
 				</Link>
 			</li>
 			<li>
 				<Link target='blank' href={socialLinks.linkedIn} variant={'ghost'} size={'icon'}>
+					<span className='sr-only'>Linkedin</span>
 					<Linkedin />
 				</Link>
 			</li>
 			<li>
 				<Link target='blank' href={socialLinks.github} variant={'ghost'} size={'icon'}>
+					<span className='sr-only'>github</span>
 					<Github />
 				</Link>
 			</li>

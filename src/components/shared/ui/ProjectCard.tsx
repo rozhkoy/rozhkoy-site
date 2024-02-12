@@ -18,6 +18,7 @@ export const ProjectCard: FunctionComponent<ProjectCardProps> = ({ title, slogan
 				<img
 					className='rounded-md object-contain row-start-2 row-end-3  object-center max-h-[225px] w-full shadow-lg hover:scale-125 transition duration-500'
 					src={img}
+					alt={title}
 					width='360'
 					height='225'
 				/>
