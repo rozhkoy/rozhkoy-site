@@ -4,7 +4,7 @@ export const ProjectsHero = () => {
 	return (
 		<section>
 			<Container>
-				<h1 className='pt-12 pb-10 text-5xl font-semibold leading-snug'>Here's the list of some projects I've built</h1>
+				<h1 className='py-3 sm:py-10 text-2xl sm:text-5xl  w-full font-semibold leading-snug'>Here's the list of some projects I've built</h1>
 			</Container>
 		</section>
 	);

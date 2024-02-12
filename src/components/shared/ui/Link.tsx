@@ -9,7 +9,7 @@ import { buttonVariants } from './Button';
 export interface LinksProps extends VariantProps<typeof buttonVariants> {
 	className?: string;
 	children: ComponentChildren;
-	target: string;
+	target?: string;
 	href: string;
 }
 

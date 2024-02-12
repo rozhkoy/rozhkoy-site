@@ -2,17 +2,23 @@ import type { FunctionComponent } from 'preact';
 import { routes } from '../consts/routes';
 import { NavLink } from './NavLink';
 import type { PropsWithClassName } from '../type/PropsWithClassName';
+import { SocialLinks } from './SocialLinks';
 
-export const Navbar: FunctionComponent<PropsWithClassName> = ({ className }) => {
+export interface NavbarProps extends PropsWithClassName {
+	listClassName?: string;
+}
+
+export const Navbar: FunctionComponent<NavbarProps> = ({ className, listClassName }) => {
 	return (
-		<nav>
-			<ul class={className}>
+		<nav class={className}>
+			<ul className={listClassName}>
 				{Object.keys(routes).map((item) => (
 					<li>
 						<NavLink title={routes[item].title} pathname={routes[item].path} />
 					</li>
 				))}
 			</ul>
+			<SocialLinks className='mt-4 sm:hidden' />
 		</nav>
 	);
 };

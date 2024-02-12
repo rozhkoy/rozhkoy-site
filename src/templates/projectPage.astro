@@ -12,19 +12,23 @@ const { frontmatter } = Astro.props;
 
 <style>
 	article :global(ul) {
-		@apply list-disc ml-6 mt-4 gap-2;
+		@apply list-disc ml-6 mt-4 gap-2 flex flex-col;
+	}
+
+	article :global(p) {
+		@apply mt-4 gap-2;
 	}
 </style>
 
 <Layout title='Welcome to Astro.'>
 	<Header client:only />
 	<Breadcrumb client:only />
-	<Container className='py-9'>
+	<Container className='py-5 md:py-9'>
 		<ImageGrid banner={frontmatter.banner} firstSlot={frontmatter.firstSlot} secondSlot={frontmatter.secondSlot} />
 	</Container>
 
 	<ProjectInfo year={frontmatter.year} title={frontmatter.title} github='blank' website='blank' />
-	<Container className='py-9'>
+	<Container className=' py-5 md:py-9'>
 		<article>
 			<slot />
 		</article>

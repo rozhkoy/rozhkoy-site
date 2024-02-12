@@ -6,7 +6,7 @@ export const Breadcrumb = () => {
 	path.shift();
 
 	return (
-		<section className='mt-20 bg-white/80 sticky top-[60px] py-2  backdrop-blur-md'>
+		<section className='mt-20 bg-white/80 sticky top-[60px] py-2  backdrop-blur-md z-30'>
 			<Container>
 				<nav aria-label='Breadcrumb'>
 					<ul class='flex items-center gap-1 text-sm text-gray-600'>

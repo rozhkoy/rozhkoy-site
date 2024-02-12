@@ -8,7 +8,7 @@ interface RecentProjectCard extends ImageGridProps, RecentProjectCardHeaderProps
 
 export const RecentProjectCard: FunctionComponent<RecentProjectCard> = ({ title, slogan, href, banner, firstSlot, secondSlot }) => {
 	return (
-		<SectionWithHeading heading={'Recent Project'} className={'py-9'}>
+		<SectionWithHeading heading={'Recent Project'} className={'py-5 md:py-7 lg:py-9 '}>
 			<RecentProjectCardHeader title={title} slogan={slogan} href={href} />
 			<ImageGrid banner={banner} secondSlot={secondSlot} firstSlot={firstSlot} />
 		</SectionWithHeading>

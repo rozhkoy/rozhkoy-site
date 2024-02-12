@@ -11,16 +11,16 @@ interface BioProps {
 export const Bio: FunctionComponent<BioProps> = ({ bio }) => {
 	return (
 		<section>
-			<Container className='pb-20 pt-12 '>
-				<h1 className='text-3xl font-semibold w-full'>About me</h1>
+			<Container className='pb-10 pt-6 md:pb-20 md:pt-12 '>
+				<h1 className='text-2xl md:text-5xl font-semibold w-full'>About me</h1>
 
-				<h2 className='text-xl font-semibold  mt-16'>A few words to myself</h2>
+				<h2 className='text-xl font-semibold mt-6  md:mt-16'>A few words to myself</h2>
 
 				{bio.map((item) => (
 					<p className='text-zinc-500 mt-4 dark:text-zinc-600'>{item}</p>
 				))}
 
-				<div className={'flex justify-between mt-6'}>
+				<div className={'flex flex-wrap min-[375px]:gap-0 gap-4 justify-between mt-6'}>
 					<Link href={routes.projects.path} size={'lg'}>
 						See my projects
 					</Link>

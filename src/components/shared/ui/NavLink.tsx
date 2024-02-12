@@ -5,7 +5,7 @@ interface NavLinkProps {
 
 export const NavLink = ({ title, pathname }: NavLinkProps) => {
 	return (
-		<a href={pathname} class={`text-base font-normal hover:text-black transition-colors ${pathname !== window.location.pathname && 'text-gray-500'}`}>
+		<a href={pathname} class={`font-normal  hover:text-black transition-colors ${pathname !== window.location.pathname ? 'text-gray-500' : 'text-black'}`}>
 			{title}
 		</a>
 	);
