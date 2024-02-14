@@ -2,9 +2,11 @@
 title: 'Best Tic-tac-toe'
 year: '2023-2024'
 layout: './src/templates/projectPage.astro'
-banner: '../../src/content/assets/tic-tac-toe-baner.png'
-firstSlot: '../../src/content/assets/tic-tac-toe-img-1.png'
-secondSlot: '../../src/content/assets/tic-tac-toe-img-2.png'
+banner: '../../src/content/assets/tic-tac-toe-baner.jpg'
+firstSlot: '../../src/content/assets/tic-tac-toe-img-1.jpg'
+secondSlot: '../../src/content/assets/tic-tac-toe-img-2.jpg'
+github: 'https://github.com/rozhkoy/best-tic-tac-toe'
+website: 'https://tic-tac-toe.rozhkoy.xyz'
 ---
 
 Best tic-tac-toe is an interactive web game that combines three exciting game modes for a diverse gaming experience:

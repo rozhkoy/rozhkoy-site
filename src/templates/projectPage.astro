@@ -20,14 +20,14 @@ const { frontmatter } = Astro.props;
 	}
 </style>
 
-<Layout title='Welcome to Astro.'>
+<Layout title={frontmatter.title}>
 	<Header client:only />
 	<Breadcrumb client:only />
 	<Container className='py-5 md:py-9'>
 		<ImageGrid banner={frontmatter.banner} firstSlot={frontmatter.firstSlot} secondSlot={frontmatter.secondSlot} />
 	</Container>
 
-	<ProjectInfo year={frontmatter.year} title={frontmatter.title} github='blank' website='blank' />
+	<ProjectInfo year={frontmatter.year} title={frontmatter.title} github={frontmatter.github} website={frontmatter.website} />
 	<Container className=' py-5 md:py-9'>
 		<article>
 			<slot />
