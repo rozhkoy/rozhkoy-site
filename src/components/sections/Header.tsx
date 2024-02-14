@@ -12,8 +12,8 @@ export const Header = () => {
 				<Logo />
 				<MobileMenuBtn className={'sm:hidden'} onClick={() => setIsOpen((prev) => !prev)} hide={isOpen} />
 				<Navbar
-					className={`fixed sm:static translate-x-full sm:translate-x-0 duration-500 transition-transform gap-2  sm:gap-0 py-7 sm:py-0 px-5 ms:px-0  text-2xl sm:text-base  inset-0 sm:inset-auto top-[60px] sm:top-auto flex gap-x-4 flex-col  bg-gray-50 sm:bg-transparent h-[100vh] sm:h-auto ${
-						isOpen ? 'translate-x-0' : ''
+					className={`fixed sm:static  sm:translate-x-0 duration-500 transition-transform gap-2  sm:gap-0 py-7 sm:py-0 px-5 ms:px-0  text-2xl sm:text-base  inset-0 sm:inset-auto top-[60px] sm:top-auto flex gap-x-4 flex-col  bg-gray-50 sm:bg-transparent h-[100vh] sm:h-auto ${
+						isOpen ? 'translate-x-0' : 'translate-x-full'
 					}  `}
 					listClassName='gap-3 flex flex-col sm:flex-row'
 				/>
