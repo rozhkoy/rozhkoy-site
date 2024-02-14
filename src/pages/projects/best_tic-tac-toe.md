@@ -1,7 +1,7 @@
 ---
 title: 'Best Tic-tac-toe'
 year: '2023-2024'
-layout: './src/templates/projectPage.astro'
+layout: '../../templates/projectPage.astro'
 banner: '../../src/content/assets/tic-tac-toe-baner.jpg'
 firstSlot: '../../src/content/assets/tic-tac-toe-img-1.jpg'
 secondSlot: '../../src/content/assets/tic-tac-toe-img-2.jpg'
