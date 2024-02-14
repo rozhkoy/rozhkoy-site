@@ -1,7 +1,6 @@
-import { NavLink } from '../shared/ui/NavLink';
 import { SocialLinks } from '../shared/ui/SocialLinks';
 import { Container } from '../shared/ui/Container';
-import { routes } from '../shared/consts/routes';
+
 import { Navbar } from '../shared/ui/Navbar';
 
 export const Footer = () => {

@@ -2,9 +2,9 @@
 title: 'Best Tic-tac-toe'
 year: '2023-2024'
 layout: '../../templates/projectPage.astro'
-banner: '../../src/content/assets/tic-tac-toe-baner.jpg'
-firstSlot: '../../src/content/assets/tic-tac-toe-img-1.jpg'
-secondSlot: '../../src/content/assets/tic-tac-toe-img-2.jpg'
+banner: '/assets/tic-tac-toe-baner.jpg'
+firstSlot: '/assets/tic-tac-toe-img-1.jpg'
+secondSlot: '/assets/tic-tac-toe-img-2.jpg'
 github: 'https://github.com/rozhkoy/best-tic-tac-toe'
 website: 'https://tic-tac-toe.rozhkoy.xyz'
 ---
