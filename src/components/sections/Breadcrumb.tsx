@@ -16,23 +16,25 @@ export const Breadcrumb = () => {
 								<Home size={16} strokeWidth={1} />
 							</a>
 						</li>
-						{path.map((item, index, array) => (
-							<>
-								<li>
-									<ChevronRight size={16} strokeWidth={1} />
-								</li>
+						{path.map((item, index, array) =>
+							item !== '' ? (
+								<>
+									<li>
+										<ChevronRight size={16} strokeWidth={1} />
+									</li>
 
-								<li>
-									{array.length - 1 === index ? (
-										<span class='block transition first-letter:uppercase'>{item.split('_').join(' ')}</span>
-									) : (
-										<a href={`/${array.slice(0, index + 1).join('/')}`} class='block transition hover:text-black first-letter:uppercase'>
-											{item.split('_').join(' ')}
-										</a>
-									)}
-								</li>
-							</>
-						))}
+									<li>
+										{array.length - 1 === index ? (
+											<span class='block transition first-letter:uppercase'>{item.split('_').join(' ')}</span>
+										) : (
+											<a href={`/${array.slice(0, index + 1).join('/')}`} class='block transition hover:text-black first-letter:uppercase'>
+												{item.split('_').join(' ')}
+											</a>
+										)}
+									</li>
+								</>
+							) : null,
+						)}
 					</ul>
 				</nav>
 			</Container>

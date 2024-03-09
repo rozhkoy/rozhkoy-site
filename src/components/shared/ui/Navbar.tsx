@@ -2,7 +2,6 @@ import type { FunctionComponent } from 'preact';
 import { routes } from '../consts/routes';
 import { NavLink } from './NavLink';
 import type { PropsWithClassName } from '../type/PropsWithClassName';
-import { SocialLinks } from './SocialLinks';
 
 export interface NavbarProps extends PropsWithClassName {
 	listClassName?: string;
@@ -18,7 +17,6 @@ export const Navbar: FunctionComponent<NavbarProps> = ({ className, listClassNam
 					</li>
 				))}
 			</ul>
-			<SocialLinks className='mt-4 sm:hidden' />
 		</nav>
 	);
 };

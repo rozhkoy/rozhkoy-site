@@ -5,10 +5,16 @@ export const aboutMe = {
 	],
 	experience: [
 		{
-			title: 'Freelance',
-			from: '12 / 2022',
+			title: 'Frontend developer',
+			from: '08 / 2020',
 			to: 'Now',
-			description: 'Frontend developer | Poland, Remote',
+			description: 'Freelance  | Poland, Remote',
+		},
+		{
+			title: 'Frontend mentor',
+			from: '10 / 2022',
+			to: '9 / 2023',
+			description: 'GoIT Poland | Poland, Remote',
 		},
 	],
 
