@@ -16,7 +16,31 @@ const { frontmatter } = Astro.props;
 	}
 
 	article :global(p) {
-		@apply mt-4 gap-2;
+		@apply mb-4 gap-2;
+	}
+
+	article :global(h1) {
+		@apply text-3xl font-bold mb-3;
+	}
+
+	article :global(h2) {
+		@apply text-2xl font-bold mb-2;
+	}
+
+	article :global(h3) {
+		@apply text-xl font-bold mb-2;
+	}
+
+	article :global(h4) {
+		@apply text-lg font-bold mb-2;
+	}
+
+	article :global(h5) {
+		@apply text-base font-bold mb-2;
+	}
+
+	article :global(h6) {
+		@apply text-sm font-bold mb-2;
 	}
 </style>
 

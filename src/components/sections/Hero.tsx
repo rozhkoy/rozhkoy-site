@@ -1,4 +1,3 @@
-import { Button } from '../shared/ui/Button';
 import { SocialLinks } from '../shared/ui/SocialLinks';
 
 export const Hero = () => {

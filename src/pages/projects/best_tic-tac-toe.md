@@ -16,3 +16,18 @@ Best tic-tac-toe is an interactive web game that combines three exciting game mo
 -   **Bot Mode:** Experience intelligent single-player gameplay with a challenging miniMax algorithm-based AI.
 
 -   **Two-Player Mode:** Enjoy interactive Tic-Tac-Toe matches with a friend, optimized for engaging two-player interactions.
+
+## Tech stack
+
+TypeScript, React, Redux/Redux-Toolkit, React Router, React Query, Axios, JavaScript, Node.js, Express.js, PostgreSQL, Sequelize, Swagger.
+
+## Features:
+
+-   Light and dark themes.
+-   Bot implemented using the miniMax algorithm.
+-   Authentication through Firebase.
+-   Implemented REST API.
+-   Documentation provided through Swagger Doc.
+-   Adaptive design.
+-   Development of shared, reusable UI components library.
+-   Implementation of multiplayer features including connection setup and display of opponent status.

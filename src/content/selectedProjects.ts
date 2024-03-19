@@ -1,14 +1,14 @@
 export const selectedProjects = [
 	{
 		title: 'Shamans King NTF Coin',
-		slogan: 'NFT coin based on the manga about Shamans King.',
+		slogan: 'Collaboratively crafted a cryptocurrency website in partnership with a designer.',
 		href: 'http://m999592o.beget.tech/shaman/',
 		img: '/assets/shaman.jpg',
 		stack: ['JavaScript', 'SCSS', 'HTML'],
 	},
 	{
 		title: 'Happy Tigers',
-		slogan: 'NFT that blurs the boundaries between real and virtual worlds.',
+		slogan: 'Developed a captivating introductory website for NFTs.',
 		href: 'https://happytigersclub.com/',
 		img: '/assets/happy-tigers.jpg',
 		stack: ['JavaScript', 'SCSS', 'HTML'],
@@ -16,7 +16,7 @@ export const selectedProjects = [
 
 	{
 		title: 'Royal Wood Racing',
-		slogan: 'NFT platform uniting car enthusiasts and tech for passive income possibilities.',
+		slogan: 'Developed a captivating introductory website for WEB3 game.',
 		href: 'https://royal-wood-racing.vercel.app/',
 		img: '/assets/royal-wood-racing.jpg',
 		stack: ['React', 'TypeScript', 'SCSS'],
@@ -46,7 +46,7 @@ export const selectedProjects = [
 	},
 	{
 		title: 'Antenor',
-		slogan: 'GPS Tracking Solutions.',
+		slogan: 'Developed a corporate website for a GPS equipment company. As a result, the company was successfully showcased in the online space, attracting new customers.',
 		href: 'https://antenor.ua/en/',
 		img: '/assets/antenor.jpg',
 		stack: ['JavaScript', 'SCSS', 'HTML'],

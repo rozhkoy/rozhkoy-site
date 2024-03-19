@@ -11,7 +11,7 @@ export const aboutMe = {
 			description: 'Freelance  | Poland, Remote',
 		},
 		{
-			title: 'Frontend mentor',
+			title: 'Frontend Mentor Assistant',
 			from: '10 / 2022',
 			to: '9 / 2023',
 			description: 'GoIT Poland | Poland, Remote',
